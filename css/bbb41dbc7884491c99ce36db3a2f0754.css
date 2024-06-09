@@ -1,0 +1,99 @@
+.c-box-f {
+  position: fixed;
+  top: 30%;
+  right: 0;
+  display: block;
+  z-index: 999;
+}
+.c-box-m {
+  position: fixed;
+  top: 30%;
+  right: 0;
+  display: none;
+}
+.c-box-f .icon {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+    margin-top: -3px;
+    fill: currentColor;
+}
+.c-box-f ul {
+  list-style: none;
+}
+
+.c-box-f ul li {
+  display: block;
+  width: 65px;
+  height: 65px;
+  background-color: #ffffff;
+  color: rgb(128, 128, 128);
+  text-align: center;
+  margin: 1px 1px;
+  border-radius: 5%;
+}
+
+.c-box-f li a {
+  width: 100%;
+  height: 100%;
+  color: rgb(128, 128, 128);
+}
+
+.c-box-f li a .r-box {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  background-color: #ffffff;
+  color: rgb(128, 128, 128);
+  padding: 10px 0;
+  box-shadow: 2px 2px 4px 1px rgba(49, 48, 48, 0.6);
+}
+
+/* ��һ�� */
+.c-box-f li a .red {
+  background-color: #f75316;
+  color: #ffffff;
+}
+
+.c-box-f li a .r-box:hover {
+  background-color: #f75316;
+  color: #ffffff;
+}
+
+.c-box-f li .r-box span {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.c-box-m a swt-m{
+  display: block;
+  width: 40px;
+  height: 100px;
+  z-index: 200;
+  margin: 5px;
+}
+.c-box-m a .close-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  z-index: 300;
+  background-image: url("/img-2021/7.gif");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+@media(max-width: 767px) {
+  .c-box-f {
+    display: none;
+  }
+  .c-box-m {
+    display: block;
+  }
+}
